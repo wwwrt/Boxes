@@ -13,4 +13,14 @@ function draw() {
     let numCols = ceil(boxes.length / numRows); 
     let xOffset = (width - numCols * 60) / 2; 
     let yOffset = (height - numRows * 60) / 2; 
+    let index = 0;
+    for (let i = 0; i < numRows; i++) {
+      for (let j = 0; j < numCols; j++) {
+        if (index < boxes.length) {
+          boxes[index].setPosition(xOffset + j * 60, yOffset + i * 60);
+          boxes[index].display();
+          index++;
+        }
+      }
+    }
 }
