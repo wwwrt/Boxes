@@ -9,4 +9,8 @@ function setup() {
 
 function draw() {
     background(255);
+    let numRows = ceil(sqrt(boxes.length)); 
+    let numCols = ceil(boxes.length / numRows); 
+    let xOffset = (width - numCols * 60) / 2; 
+    let yOffset = (height - numRows * 60) / 2; 
 }
