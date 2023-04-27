@@ -39,3 +39,12 @@ setPosition(x, y) {
     this.x = x;
     this.y = y;
   }
+
+  display() {
+    fill(this.color);
+    rect(this.x, this.y, this.size, this.size);
+    fill(255);
+    textSize(20);
+    textAlign(CENTER, CENTER);
+    text(this.number, this.x + this.size/2, this.y + this.size/2);
+  }
