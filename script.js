@@ -24,3 +24,12 @@ function draw() {
       }
     }
 }
+
+class Box {
+    constructor(number, color) {
+      this.number = number;
+      this.color = color;
+      this.size = 50;
+      this.x = 0;
+      this.y = 0;
+    }
